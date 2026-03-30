@@ -88,3 +88,23 @@ Esse exercício está com uma resolução no notebook da aula.
 
 Tente, se não der, olhe lá!
 """
+
+frequencia_populacional = float(input("Frequência Populacional (%): "))
+gene = input("Gene: ")
+impacto = input("Impacto (ALTO/BAIXO): ")
+reads = int(input("Reads: "))
+vaf = float(input("Vaf (0 a 100): "))
+
+if reads < 10 or vaf < 20:
+    print("Não é relevante.")
+else:
+
+    genes_excecao = ['HFE', 'MEFV', 'GJB2']
+    
+    if impacto == "ALTO":
+        if frequencia_populacional > 5 and gene not in genes_excecao:
+            print("Não é relevante.")
+        else:
+            print("É relevante.")
+    else:
+        print("Não é relevante.")
