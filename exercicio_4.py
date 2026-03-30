@@ -37,3 +37,11 @@ Resposta:
 Sim
 
 """
+
+cromossomo_da_variante = input("Digite o cromossomo: ")
+posicao_da_variante = int(input("Digite a posição: "))
+
+if cromossomo_da_variante == "chr17" and posicao_da_variante >= 41196312 and posicao_da_variante <= 41277500:
+    print("Sim")
+else:
+    print("Não")
